@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.my_exam.App
-import com.example.my_exam.R
 import com.example.my_exam.databinding.FragmentAddCategoryBinding
 import com.example.my_exam.entities.Category
 
@@ -31,8 +30,7 @@ class AddCategoryFragment : Fragment() {
                 Category(
                     idCategory = null,
                     nameCategory = binding.addCategoryEt.text.toString()
-                )
-            )
+                ))
             Log.d("DDDD", "${ db?.getAllCategory() }")
         }
     }

@@ -1,5 +1,6 @@
 package com.example.my_exam.fragments
 
+import android.app.Fragment
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -33,7 +34,7 @@ class LoginFragment : Fragment() {
             sharedPreference.password = binding.passwordEt.text.toString()
 
             startActivity(Intent(requireActivity(), MainActivity::class.java))
-//            Toast.makeText(requireContext(),"введите текст",Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(),"введите текст",Toast.LENGTH_LONG).show()
         }
     }
 }
